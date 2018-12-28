@@ -1,0 +1,9 @@
+TODO: 
+
+Simulera enheter som kroppar istället
+- Ju närmare linjen de är, ju svårare har de bakom att flytta på en
+- Bakomvarande enheter kan inte knuffa på de framför
+- Använd springs: Ju mer de trycks in i varandra, tryck tillbaka hårdare
+- Begränsa inte movement speed till mer än walking speed
+- Size beror på rörelsehastighet
+- 
