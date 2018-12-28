@@ -1,9 +1,23 @@
 TODO: 
 
-Simulera enheter som kroppar ist�llet
-- Ju n�rmare linjen de �r, ju sv�rare har de bakom att flytta p� en
-- Bakomvarande enheter kan inte knuffa p� de framf�r
-- Anv�nd springs: Ju mer de trycks in i varandra, tryck tillbaka h�rdare
-- Begr�nsa inte movement speed till mer �n walking speed
-- Size beror p� r�relsehastighet
-- 
+Simulera enheter som kroppar istället
+- Ju närmare linjen de är, ju svårare har de bakom att flytta på en
+- Bakomvarande enheter kan inte knuffa på de framför
+- Använd springs: Ju mer de trycks in i varandra, tryck tillbaka hårdare
+- Begränsa inte movement speed till mer än walking speed
+- Size beror på rörelsehastighet
+
+
+- Gör funktioner för att underlätta beräkningar
+
+* frontlineOverstepLength
+* sidelineOverstepLength
+* getLeftSideLineVector
+* getRightSideVector
+
+Gör "hårda" boundaries som ingen kan överträda - varje försök leder till en neutralisering av knuff-vektor
+	så att den delen av vektorn som skulle lett till överträdelse elimineras
+	- använd dotprodukten för att avgöra hur mycket som ska tas bort
+	
+Gör så att energi inte överförs mellan partiklar - de stannar helt enkelt när de stöter på ett hinder mhja hårda boundaries
+nåt att ha? https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics
