@@ -12,7 +12,7 @@ public class Main {
 		while(true) {
 			world.simstep();
 			frame.repaint();
-			try {Thread.sleep(16);} catch (InterruptedException e) {e.printStackTrace();}
+			try {Thread.sleep(5);} catch (InterruptedException e) {e.printStackTrace();}
 		}
 		
 	}
