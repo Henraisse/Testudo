@@ -172,6 +172,14 @@ public class Position implements Serializable{
 		y = y1;
 
 	}
+	
+	public void rotateAroundAxis(double angle, Position axis) {
+		this.subtract(axis);						
+		this.rotateSimple(angle);
+		//axis.rotateSimple(angle);
+		this.add(axis);
+		
+	}
 
 
 

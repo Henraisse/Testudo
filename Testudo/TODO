@@ -1,23 +1,33 @@
 TODO: 
 
-Simulera enheter som kroppar istället
-- Ju närmare linjen de är, ju svårare har de bakom att flytta på en
-- Bakomvarande enheter kan inte knuffa på de framför
-- Använd springs: Ju mer de trycks in i varandra, tryck tillbaka hårdare
-- Begränsa inte movement speed till mer än walking speed
-- Size beror på rörelsehastighet
+Simulate unit position lag in order to get more... realistic unit movements (along with tuning all parameters)
+Simulate Units further: unit direction, unit speed (walking, running, marching), etc
+Simulate Unit combat: unit direction, weapons, armor, damaged limbs, stamina, skill, shield direction, etc
 
+Simulate internal formations:
+- Archers in the back
+- pikes/spears/swords in front
+- shields at the edges
+- elite soldiers around the commander
+- rookies in front
+- experienced troops at the edges
 
-- Gör funktioner för att underlätta beräkningar
+Simulate wounded: units backing off into the formation
 
-* frontlineOverstepLength
-* sidelineOverstepLength
-* getLeftSideLineVector
-* getRightSideVector
+Add functions:
+- charge (units break formation and charge the opposing side
+- double envelopment (unit at the flanks break formation and charge the opposing sides)
+- special formations:
+	- testudo (square formation, moving slowly, shielded against missiles, requires large shield-bearing units)
+	- phalanx (square formation, all units aligned in the exact same direction)
+	- formation shitpile (All units arbitrarily bunched up)
+	- shield wall (Y'all watch(ed) Vikings, right?)
+	- hollow square
+	- hollow circle
+	- double columns with given width
+	- escort formations
+- vanguard: units in front to screen advance
 
-Gör "hårda" boundaries som ingen kan överträda - varje försök leder till en neutralisering av knuff-vektor
-	så att den delen av vektorn som skulle lett till överträdelse elimineras
-	- använd dotprodukten för att avgöra hur mycket som ska tas bort
-	
-Gör så att energi inte överförs mellan partiklar - de stannar helt enkelt när de stöter på ett hinder mhja hårda boundaries
-nåt att ha? https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics
+- reformation algorithm: Allow realistic change of formations, instead of rigid and unnatural movements (every soldier wants to move as little as possible, right?)
+
+---------------------------------------------------------------------------------------------------------
